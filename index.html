@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link href="/styles/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Welcome to my Website!</h1>
-    </header>
-    <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niv Barnahor - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
 
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
-      </div>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Niv Barnahor</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <button id="mode-toggle"> Dark Mode</button>
+    </header>
+
+    <main class="main-layout">
+        
+        <section class="hero-section">
+            <img src="/profile_pic.png" alt="Niv Barnahor - Profile Picture" class="profile-pic">
+            
+            <div class="hero-text">
+                <h2>Student, MATAR Excellence Program</h2>
+                <p>Experienced in leading projects with strong interpersonal, organizational, and analytical skills. Quick to learn, detail-oriented and proactive - makes things happen.</p>
+                
+                <a href="mailto:nivbnr@gmail.com" class="cta-button">Contact Me</a>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Python</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">SQL</div>
+                <div class="skill-card">Excel</div>
+                <div class="skill-card">Figma</div>
+            </div>
+        </section>
+
     </main>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+<footer>
+    <div class="footer-content">
+        <p>Find me on:</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/niv-barnahor-657a66311/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/nivbn" target="_blank">GitHub</a></li>
+        </ul>
+        <p class="email-details">
+            Email: 
+            <br> <a href="mailto:nivbnr@gmail.com">nivbnr@gmail.com</a>
+        </p>
+    </div>
+</footer>
+
+</body>
 </html>

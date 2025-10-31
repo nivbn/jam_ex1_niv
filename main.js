@@ -1,19 +1,21 @@
-console.log("Hello World!");
-setupCounter();
+document.addEventListener('DOMContentLoaded', () => {
 
-function setupCounter() {
-  let count = 0;
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.body;
 
-  function increment() {
-    count++;
-    document.querySelector("#count").innerHTML = count;
-  }
 
-  function decrement() {
-    count--;
-    document.querySelector("#count").innerHTML = count;
-  }
+    body.classList.add('light-mode');
 
-  document.querySelector("#increment").addEventListener("click", increment);
-  document.querySelector("#decrement").addEventListener("click", decrement);
-}
+    modeToggle.addEventListener('click', () => {
+                
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            modeToggle.textContent = 'Light Mode';
+        } else {
+            modeToggle.textContent = 'Dark Mode';
+        }
+    });
+
+});
